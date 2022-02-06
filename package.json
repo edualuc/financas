@@ -2,8 +2,9 @@
   "name": "financas",
   "version": "1.0.0",
   "description": "app de finanças pessoais",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
+    "dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@edualuc",
