@@ -1,0 +1,14 @@
+{
+  "name": "financas",
+  "version": "1.0.0",
+  "description": "app de finanças pessoais",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@edualuc",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
