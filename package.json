@@ -5,12 +5,18 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "@edualuc",
   "license": "ISC",
+  "lint-staged": {
+    "*": "prettier --write"
+  },
   "devDependencies": {
+    "husky": "^7.0.4",
     "jest": "^27.5.0",
+    "lint-staged": "^12.3.3",
     "prettier": "2.5.1",
     "typescript": "^4.5.5"
   }
