@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "tsc -w",
-    "test": "jest --coverage=false",
+    "test": "jest --coverage=false --watchAll",
+    "test:ci": "jest --coverage=false",
     "test:coverage": "jest --coverage=true",
     "prepare": "husky install"
   },
@@ -14,7 +15,7 @@
   "lint-staged": {
     "*": [
       "prettier --write --ignore-unknown",
-      "cross-env CI=true yarn test --findRelatedTests --bail"
+      "cross-env CI=true yarn test:ci --findRelatedTests --bail"
     ]
   },
   "husky": {
